@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование расчетного листа</title>
+    <meta charset="utf-8" />
+    <style>.field{width:180px;}</style>
+</head>
+<body>
+    <h1>Редактирование </h1>
+     <form action="/editt" method="POST">
+        <input type="hidden" name="id" value="{{zarp.id}}" />
+        <label>Фамилия</label><br>
+        <input name="fam" value="{{zarp.fam}}"  class="field" /><br><br>
+        <label>Премия</label><br>
+        <input name="prem"  value="{{zarp.prem}}"  class="field" /><br><br>
+<label>Начисленно</label><br>
+        <input name="nach"  value="{{zarp.nach}}"  class="field" /><br><br>
+<label>Удержано</label><br>
+        <input name="uder"  value="{{zarp.uder}}"  class="field" /><br><br>
+        <label>Итого</label><br>
+        <input name="itog" value="{{zarp.itog}}"  class="field" /><br><br>
+        <label>Номер_графика</label><br>
+        <input name="id_graf" value="{{zarp.id_graf}}"  class="field" /><br><br>
+        <label>Номер_сотрудника</label><br>
+        <input name="id_sotr" value="{{zarp.id_sotr}}"  class="field" /><br><br>
+        <label>Текущий_месяц</label><br>
+        <input name="mes" value="{{zarp.mes}}"  class="field" /><br><br>
+        <label>Отпуск</label><br>
+        <input name="otpus" value="{{zarp.otpus}}"  class="field" /><br><br>
+        <input type="submit" value="Отправить" />
+     </form>
+     <a href="/indexx">К списку расчетного листа </a>
+</body>
+<html>

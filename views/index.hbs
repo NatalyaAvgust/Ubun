@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список сотрудников</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Список сотрудников</h1>
+  <style>
+  body { background: url(https://i1.wp.com/book-terra.ru/wp-content/uploads/2018/04/%D1%84%D0%BE%D0%BD-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%B9%D1%82%D0%B0-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8.jpg?fit=848%2C848&ssl=1); }
+</style>
+    <p><a href="/create">Добавить сотрудника</a></p>
+    <table border="2">
+        <tr><th>Фамилия</th><th>Имя</th><th>Дата_рождения</th><th>Оклад</th><th>Дата_принятия</th><th>Должность</th><th>Телефон</th><th>Адрес</th><th>Номер_графика</th><th>Кнопки</th></tr>
+        {{#each kadr}}
+            <tr>
+                <td>{{this.fam}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.daterj}}</td>
+                <td>{{this.oklad}}</td>
+                <td>{{this.daterab}}</td>
+                <td>{{this.doljn}}</td>
+                <td>{{this.tel}}</td>
+                <td>{{this.adres}}</td>
+                <td>{{this.id_graf}}</td>
+                <td>
+                    <a href="/edit/{{this.id}}">Изменить</a>|
+                    <form action="delete/{{this.id}}" method="POST" style="display:inline;">
+                        <input type="submit" value="Удалить" />
+                    </form>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+<html>

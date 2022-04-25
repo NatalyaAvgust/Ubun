@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование сотрудника</title>
+    <meta charset="utf-8" />
+    <style>.field{width:180px;}</style>
+</head>
+<body>
+    <h1>Редактирование сотрудника</h1>
+     <form action="/edit" method="POST">
+        <input type="hidden" name="id" value="{{kadr.id}}" />
+        <label>Фамилия</label><br>
+        <input name="fam" value="{{kadr.fam}}"  class="field" /><br><br>
+        <label>Имя</label><br>
+        <input name="name"  value="{{kadr.name}}"  class="field" /><br><br>
+<label>Дата_рождения</label><br>
+        <input name="daterj"  value="{{kadr.daterj}}"  class="field" /><br><br>
+<label>Оклад</label><br>
+        <input name="oklad"  value="{{kadr.oklad}}"  class="field" /><br><br>
+        <label>Дата_принятия</label><br>
+        <input name="daterab" value="{{kadr.daterab}}"  class="field" /><br><br>
+
+        <label>Должность</label><br>
+        <input name="doljn" value="{{kadr.doljn}}"  class="field" /><br><br>
+        <label>Телефон</label><br>
+        <input name="tel" value="{{kadr.tel}}"  class="field" /><br><br>
+        <label>Адрес</label><br>
+        <input name="adres" value="{{kadr.adres}}"  class="field" /><br><br>
+        <label>Номер_графика</label><br>
+        <input name="id_graf" value="{{kadr.id_graf}}"  class="field" /><br><br>
+        <input type="submit" value="Отправить" />
+     </form>
+     <a href="/">К списку Сотрудников</a>
+</body>
+<html>

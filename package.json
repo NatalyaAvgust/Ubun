@@ -1,0 +1,16 @@
+{
+  "name": "kurnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express-handlebars": "^6.0.3",
+    "hbs": "^4.2.0",
+    "xpress": "^2.4.6"
+  }
+}
